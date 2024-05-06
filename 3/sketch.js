@@ -156,7 +156,7 @@ function draw() {
     colorIndicator = createDiv('');
     colorIndicator.style('background-color', `rgb(${col[0]}, ${col[1] || 0}, ${col[2] || 0})`);
     colorIndicator.position(950, -10); // Adjust position as needed
-    colorIndicator.size(80, 720); // Adjust size as needed
+    colorIndicator.size(80, 780); // Adjust size as needed
   }
   
   // Update color indicator
