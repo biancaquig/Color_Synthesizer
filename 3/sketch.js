@@ -136,6 +136,15 @@ function draw() {
   octave.style( 'font-size:24px')
   octave.position(1100, 125);
    
+     
+  let coltext = createDiv(' color ')
+  coltext.style('font-family: Helvetica, sans-serif');
+  coltext.style('color:rgb(159,128,180)')
+  coltext.style('font-style: bold')
+  coltext.style('font-weight: 1000');
+  coltext.style( 'font-size:24px')
+  coltext.position(1100, 25);
+   
   background(300);
   
   // Draw the video
@@ -155,8 +164,8 @@ function draw() {
     let col = labelColors[label] || [0]; // Default to black if color not found
     colorIndicator = createDiv('');
     colorIndicator.style('background-color', `rgb(${col[0]}, ${col[1] || 0}, ${col[2] || 0})`);
-    colorIndicator.position(950, -10); // Adjust position as needed
-    colorIndicator.size(80, 780); // Adjust size as needed
+    colorIndicator.position(1170, 25); // Adjust position as needed
+    colorIndicator.size(25, 25); // Adjust size as needed
   }
   
   // Update color indicator
